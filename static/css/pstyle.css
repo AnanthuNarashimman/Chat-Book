@@ -46,6 +46,7 @@ body {
 .navlinks li:hover{
     transform: translateY(-4px);
     text-decoration: underline;
+    color: white;
 }
 
 .logo {
