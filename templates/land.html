@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat&Book</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/lstyle.css') }}">
+</head>
+<body>
+    
+    <div class="navbar">
+        <p class="logo">Chat&Book</p>
+        <form action="{{ url_for('logp_disp') }}">
+        <button class="logbtn">Sign Up</button>
+        </form>
+    </div>
+
+    <div class="description">
+        <h2>Welcome to Chat&Book!</h2>
+        <p class="goal">Simplifying Museum Visits with Our Chatbot-Based Ticketing 
+            System
+        </p>
+        <p>
+            Our mission is to revolutionize the way you interact with museums. With Chat&Book, you can:</p>
+            <ul class="features">
+                <li><span class="head">Book Tickets Online:</span> Skip the queues and book your museum tickets 
+                    seamlessly through our chatbot.</li>
+                <li><span class="head">Explore Museum Information:</span> Get details about exhibits, hours of operation,
+                     and other FAQs directly through our chatbot.</li>
+                <li><span class="head">Manage Your Bookings:</span> Track and manage your tickets effortlessly.</li>
+            </ul>
+            <p>
+            We are currently in the development phase, but stay tuned for exciting updates as we build a smarter way to 
+            explore museums!
+            </p>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/land.js') }}"></script>
+</body>
+</html>

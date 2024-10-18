@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat&Book</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/homestyle.css') }}">
+    <script src="https://kit.fontawesome.com/827b3390e0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="chatbot">
+        <form action="{{ url_for('chatpage') }}">
+            <button class="chatbtn"><img src="{{ url_for('static', filename='images/robot.png') }}"></button>
+        </form>
+    </div>
+    <div class="navbar">
+        <p class="logo">Chat&Book</p>
+
+        <ul class="navlinks">
+            <li class="home" style="text-decoration: underline; color: white;"><a href="/">Home</a></li>
+            <li class="museums"><a href="">Museums</a></li>
+            <li class="btickets"><a href="">Book Tickets</a></li>
+            <li class="mtickets"><a href="">My Tickets</a></li>
+            <li class="settings"><a href="">Settings</a></li>
+        </ul>
+
+        <div class="hambur">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        
+        <form action="{{ url_for('profile') }}">
+        <button class="profile-btn"><i class="fa-solid fa-user" id="profile"></i></button>
+        </form>
+
+    </div>
+
+    <section class="main">
+        <h1>Seamlessly Book Tickets Through Chat</h1>
+        <p>Your fast, simple, and conversational personal assistant for booking museum tickets is under Development stage.</p>
+        <a href="#about" class="talook">Take a Look<i class="fa-solid fa-angles-down"></i></a>
+    </section>
+
+    <section class="intro" id="about">
+        <h2>About Chat&Book</h2>
+        <p>Chat&Book is a smart platform designed to help you book tickets for museums quickly and easily through a 
+            conversational chatbot. No need to navigate complex booking systems just tell our chatbot where you want to 
+            go, and it'll handle the rest.</p>
+    </section>
+
+    <hr class="hrlines">
+
+    <section class="features">
+        <h2>Our Features</h2>
+        <div class="features-grid">
+            <div class="feature-item">
+                <i class="fa-solid fa-message"></i>
+                <h3>Chat-Based Booking</h3>
+                <p>Book your museum tickets by simply chatting with our smart assistant.</p>
+            </div>
+            <div class="feature-item">
+                <i class="fa-solid fa-ticket-simple"></i>
+                <h3>Manage Your Tickets</h3>
+                <p>Easily view and manage all your booked tickets in one place.</p>
+            </div>
+            <div class="feature-item">
+                <i class="fa-solid fa-language"></i>
+                <h3>Multi-Language Support</h3>
+                <p>Our chatbot and website support multiple languages for your convenience.</p>
+            </div>
+            <div class="feature-item">
+                <i class="fa-solid fa-building-columns"></i>
+                <h3>Explore Museums</h3>
+                <p>Browse through a variety of museums, each with detailed information about exhibits.</p>
+            </div>
+        </div>
+    </section>
+
+    <hr class="hrlines">
+
+    <section class="devstatus">
+        <h2>Currently in Development</h2>
+        <p>We're working hard to bring you the best ticket booking experience! Stay tuned for more features like payment 
+            integration, personalized museum recommendations, and more.</p>
+        <h3>Upcoming Features</h3>
+        <ul>
+            <li>Secure Payment Integration</li>
+            <li>Exclusive Deals and Discounts</li>
+            <li>Enhanced Museum Search Filters</li>
+            <li>Real-Time Notifications</li>
+        </ul>
+    </section>
+
+    <hr class="hrlines">
+
+    <p  class="endhome">Your ticket partner is arriving soon!</p>
+
+    <script src="{{ url_for('static', filename='js/home.js') }}"></script>
+
+</body>
+</html>

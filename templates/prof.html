@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/827b3390e0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/pstyle.css') }}">
+    <title>Chat&Book</title>
+</head>
+<body>
+    <div class="navbar">
+        <p class="logo">Chat&Book</p>
+
+        <ul class="navlinks">
+            <li class="home"><a href="/">Home</a></li>
+            <li class="museums"><a href="">Museums</a></li>
+            <li class="btickets"><a href="">Book Tickets</a></li>
+            <li class="mtickets"><a href="">My Tickets</a></li>
+            <li class="settings"><a href="">Settings</a></li>
+        </ul>
+
+        <i class="fa-solid fa-user" id="profile"></i>
+
+        <div class="hambur">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <div class="profile">
+        <div class="nameinfo">
+            <i class="fa-regular fa-address-card" id="profileicon"></i>
+            <h3>Hello, {{username}} !</h3>
+            <p>{{mail}}</p>
+        </div>
+
+        <div class="buttons">
+            <form action="{{ url_for('chngpasswordform') }}">
+                <button class="cpword"><i class="fa-solid fa-key"></i> Change Password</button>
+            </form>
+            <form action="{{ url_for('log_out') }}">
+                <button class="lout"><i class="fa-solid fa-right-from-bracket"></i> Log out</button>
+            </form>
+
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/prof.js') }}"></script>
+</body>
+</html>

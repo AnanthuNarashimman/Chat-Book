@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/hstyle.css') }}">
+    <script src="https://kit.fontawesome.com/827b3390e0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+     
+    <p> Hello, {{ username }}</p>
+    <p>Logged in successfully!</p>
+    <div class="btns">
+    <form action="{{ url_for('log_out') }}">
+        <button class="lout btn"><i class="fa-solid fa-right-from-bracket"></i>  Log Out</button>
+    </form>
+    <form action="{{ url_for('chngpasswordform') }}">
+        <button class="chng-pword btn"><i class="fa-solid fa-key"></i>  Change Password</button>
+    </form>
+    
+    </div>
+    <script src="{{ url_for('static', filename='js/happ.js') }}"></script>
+</body>
+</html>

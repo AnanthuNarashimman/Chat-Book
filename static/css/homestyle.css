@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding: 80px;
+}
+
+body {
+    background-color: white;
+    width: 100%;
+    min-height: 100vh;
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+
+
+.navlinks {
+    list-style: none;
+    font-family: 'Nunito sans';
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+}
+
+.navlinks a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.navlinks li{
+    display: inline-block;
+    transition: all 0.3s;
+}
+
+.navlinks li:hover{
+    transform: translateY(-4px);
+    text-decoration: underline;
+}
+
+.logo {
+    font-family: 'League Spartan';
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+#profile{
+    transform: scale(2);
+    margin-right: 30px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+#profile:hover {
+    filter: drop-shadow(0px 5px 5px grey);
+}
+
+.profile-btn{
+    background:transparent;
+    width: auto;
+    height: auto;
+    border: none;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    filter: drop-shadow(0px 5px 3px grey);
+    z-index: 1;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    background-color: #E9EFEC;
+    padding: 200px;
+    font-family: 'Nunito sans';
+}
+
+.main h1 {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 3rem;
+    color: #333;
+}
+
+.main p {
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+
+.talook{
+    text-decoration: none;
+    color: black;
+    background-color: #478CCF;
+    width: 150px;
+    padding: 10px;
+    color: white;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 50px;
+    transition: all 0.3s;
+}
+
+.talook i{
+    margin-left: 10px;
+}
+
+.talook:hover {
+    transform: translateY(-4px);
+    text-decoration: underline;
+}
+
+.intro {
+    background-color: white;
+    font-family: 'NUnito sans';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.intro h2{
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+
+.intro p{
+    font-size: 1.2rem;
+    color: #666;
+    margin-top: 20px;
+}
+
+.hrlines {
+    margin-top: 30px;
+}
+
+.features {
+    font-family: 'Nunito sans';
+    margin-top: 50px;
+}
+
+.features h2{
+    text-align: center;
+    text-decoration: underline;
+}
+
+.features-grid{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.feature-item {
+    margin-top: 30px;
+    width: 40%;
+    height: 200px;
+    background-color: #E9EFEC;
+    padding: 50px;
+    border-radius: 25px;
+}
+
+.feature-item h3 {
+    font-size: 1.5rem;
+}
+
+.feature-item p{
+    margin-top: 20px;
+    color: #666;
+    font-size: 18px;
+}
+
+.devstatus {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    font-family: 'Nunito sans';
+}
+
+.devstatus h2{
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+.devstatus p {
+    color: #666;
+    font-size: 18px;
+}
+
+.devstatus h3{
+    margin-top: 30px;
+    text-decoration: underline;
+}
+
+.devstatus ul{
+    margin-top: 20px;
+}
+
+.devstatus li {
+    color: #666;
+    list-style: none;
+    font-size: 17px;
+}
+
+.endhome {
+    font-family: 'Nunito sans';
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.chatbot {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 80px;
+    height: 80px;
+    background-color: #478CCF;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.5;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.chatbot:hover {
+    opacity: 1;
+    transform: translateY(-2px);
+}
+
+.chatbot img{
+    height: 60px;
+    width: auto;
+    filter: invert(1);
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.chatbtn{
+    height: auto;
+    width: auto;
+    background:transparent;
+    border: none;
+}
+
+.hambur span{
+    width: 25px;
+    height: 4px;
+    background-color: black;
+    display: block;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.hambur {
+    position: absolute;
+    padding: 5px;
+    right: 60px;
+    transition: all 0.3s;
+    display: none;
+}
+
+
+.hamactive {
+    background-color: #478CCF;
+    border-radius: 50%;
+}
+
+@media (max-width:700px){
+    .logo {
+        font-size: 1.8rem;
+    }
+
+    #profile {
+        transform: scale(1.5);
+        margin-right: 20px;
+    }
+
+    .hambur {
+        display: block;
+    }
+
+    
+    .navlinks {
+        flex-direction: column;
+        position: absolute;
+        background-color: #478CCF;
+        padding: 20px;
+        width: 300px;
+        transition: all 0.5s;
+        right: 0;
+        top: 70px;
+        transform: translateX(400px);
+    }
+
+    
+
+    .active {
+        transform: translateX(0px);
+        
+    }
+
+    
+
+    .navlinks li{
+        padding: 20px;
+    }
+
+    .navlinks a{
+        color: white;
+    }
+
+    .main {
+        height: 90vh;
+        padding: 10px;
+    }
+
+    .main h1{
+        font-size: 2rem;
+        text-align:unset
+    }
+
+    .intro p{
+        margin-top: 30px;
+        padding: 5px;
+    }
+
+    .features-grid {
+        gap: 10px;
+        padding: 20px;
+    }
+
+    .feature-item {
+        padding: 15px;
+        height: 200px;
+        width: 100%;
+    }
+
+    .feature-item h3{
+        font-size: 20px;
+    }
+
+}
+

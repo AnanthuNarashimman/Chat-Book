@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    width: 100vw;
+    height: 100%;
+    background-color: #E9EFEC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.msgarea {
+    width: 100%;
+    height: 85vh;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end; /* Align messages from the top */
+    gap: 5px;
+    background-color: white;
+    padding: 10px;
+    overflow-y: auto; /* Enable scrolling */
+}
+
+.msg{
+    max-width: 80%;
+    display: block; /* Change this */
+    height: auto; /* Keep this */
+    background-color: #478CCF;
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+    margin-top: 10px;
+    word-wrap: break-word;
+    overflow-wrap: break-word; /* Ensure long words wrap */
+}
+
+.translated-msg {
+    max-width: 80%;
+    display: block;
+    background-color: #E9EFEC;
+    padding: 5px;
+    border-radius: 10px;
+    color: #333;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    position: relative;
+    align-self: flex-start; /* Align to the left */
+    background-color: #E9EFEC; /* Optional: lighter background for translated message */
+}
+
+
+
+.lang {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+
+
+.typebar {
+    width: 100vw;
+    height: 10vh;
+    background-color: #E9EFEC;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5%;
+    position: fixed;
+    bottom: 0;
+}
+
+.msgbox {
+    width: 80%;
+    height: 80%;
+    margin-left: 20px;
+    border-radius: 25px;
+    border: 1px solid black;
+    background: white;
+    padding-left: 15px;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+    position: relative;
+    font-size: 16px;
+}
+
+.sendbtn {
+    border: 1px solid black;
+    background-color: #478CCF;
+    color: white;
+    width: 10%;
+    height: 80%;
+    border-radius: 25px;
+    margin-right: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+@media (max-width:700px) {
+    .msgarea {
+        height: 80vh;
+        border: 2px solid #478CCF;
+        overflow-y: scroll;
+    }
+
+    .msgarea p{
+        height: auto;
+        margin-top: 30px;
+    }
+
+    .msgbox {
+        width: 70%;
+        height: 70%;
+    }
+
+    .sendbtn {
+        width: 30%;
+        height: 70%;
+    }
+
+
+
+    
+}

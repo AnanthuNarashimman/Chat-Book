@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+body {
+    background-color: white;
+    width: 100%;
+    min-height: calc(100% - 70px);
+    margin-top: 70px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.navlinks {
+    list-style: none;
+    font-family: 'Nunito sans';
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+}
+
+.navlinks a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.navlinks li{
+    display: inline-block;
+    transition: all 0.3s;
+}
+
+.navlinks li:hover{
+    transform: translateY(-4px);
+    text-decoration: underline;
+}
+
+.logo {
+    font-family: 'League Spartan';
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    filter: drop-shadow(0px 5px 3px grey);
+    z-index: 1;
+}
+
+.hambur span{
+    width: 25px;
+    height: 4px;
+    background-color: black;
+    display: block;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.hambur {
+    position: absolute;
+    padding: 5px;
+    right: 65px;
+    transition: all 0.3s;
+    display: none;
+}
+
+.hamactive {
+    background-color: #478CCF;
+    border-radius: 50%;
+}
+
+.profile{
+    background-color: #E9EFEC;
+    width: 80%;
+    height: 60vh;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:center;
+    position: relative;
+}
+
+#profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(2);
+    margin-right: 15px;
+    cursor: default;
+    transition: all 0.3s;
+    background-color: #E9EFEC;
+    border: 1px solid black;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+}
+
+
+
+#profileicon{
+    position: absolute;
+    top: 40px;
+    left: -70px;
+    transform: scale(4);
+}
+
+
+
+.nameinfo{
+    font-family: 'Nunito sans';
+    position: relative;
+    left: 0px;
+    top: 20px;
+}
+
+.nameinfo h3{
+    font-size: 3rem;
+}
+
+.nameinfo p{
+    font-size: 1.5rem;
+    color: #666;
+}
+
+.buttons{
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    gap: 100px;
+    align-items: center;
+}
+
+.buttons button {
+    font-family: 'Nunito sans';
+    font-size: 1.3rem;
+    padding: 10px;
+    width: 250px;
+    border-radius: 25px;
+    border: 1px solid black;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.buttons button:hover {
+    transform: translateY(-4px);
+    text-decoration: underline;
+}
+
+@media (max-width:700px){
+    .logo {
+        font-size: 1.8rem;
+    }
+    .hambur {
+        display: block;
+    }
+
+    
+    .navlinks {
+        flex-direction: column;
+        position: absolute;
+        background-color: #478CCF;
+        padding: 20px;
+        width: 300px;
+        transition: all 0.5s;
+        right: 0;
+        top: 70px;
+        transform: translateX(400px);
+    }
+    
+    .active {
+        transform: translateX(0px);
+    }
+
+    .buttons{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        justify-content: flex-start;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .navlinks li{
+        padding: 20px;
+    }
+
+    .navlinks a{
+        color: white;
+    }
+
+    .profile{
+        width: 80%;
+        height: 50vh;
+        border-radius: 25px;
+    }
+
+    .nameinfo h3 {
+        font-size: 2rem;
+    }
+
+    .nameinfo{
+        margin-top: 50px;
+    }
+
+    #profileicon{
+        top: -30px;
+        left: 100px;
+        transform: scale(3);
+    }
+
+    .buttons {
+        width: 100%;
+    }
+
+    .buttons button{
+        font-size: 1rem;
+        padding: 5px;
+        height: 50px;
+    }
+
+}

@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #E9EFEC;
+}
+
+.logo {
+    font-family: 'League Spartan';
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-left: 30px;
+}
+
+.logbtn{
+    font-family: 'Nunito sans';
+    border: none;
+    background-color: #478CCF;
+    color: white;
+    width: 100px;
+    padding: 10px;
+    margin-right: 30px;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s;
+    
+}
+
+.logbtn:hover {
+    transform: translateY(-4px);
+    text-decoration: underline;
+    filter: drop-shadow(5px 5px 5px grey);
+}
+
+.navbar {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    filter: drop-shadow(0px 5px 5px grey);
+}
+
+.logo {
+    margin-left: 15px;
+}
+
+.logbtn {
+    margin-right: 15px;
+}
+
+.description {
+    background-color: white;
+    margin-top: 130px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 50px;
+    border-radius: 25px;
+}
+
+.description h2{
+    font-family: 'Nunito sans';
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.description p{
+    margin-top: 40px;
+    font-family: 'Nunito sans';
+    font-size: 25px;
+}
+
+.features {
+    font-family: 'Nunito sans';
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.features li{
+    margin-top: 30px;
+}
+
+.head {
+    font-weight: 800;
+}
+
+@media (max-width:700px) {
+
+    body {
+        margin-bottom: 20px;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .description {
+        width: 90%;
+        margin-left: 18px;
+        padding: 20px;
+    }
+
+    .description h2 {
+        font-size: 25px;
+    }
+
+    .description p{
+        font-size: 18px;
+        margin-top: 20px;
+    }
+
+    .features {
+        font-size: 18px;
+    }
+
+    .features li{
+        margin-top: 10px;
+    }
+}
+

@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*background: linear-gradient(to right top,#4535C1,#478CCF,#36C2CE,#77E4C8);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;*/
+    background-color: #E9EFEC;
+}
+
+p {
+    font-family: 'Nunito sans';
+    font-size: 1.5rem;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.btn {
+    font-family: 'Nunito sans';
+    background-color: white;
+    padding: 5px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    width: 100px;
+    border-radius: 25px;
+    border: 1px solid black;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 0.3s;
+}
+
+button:hover {
+    transform: translateY(-4px);
+    text-decoration: underline;
+}
+
+
+.btns{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.lout{
+    width: 200px;
+    padding: 10px;
+}
+
+.chng-pword{
+    width: 250px;
+    padding: 10px;
+}
+
+
+@media (max-width: 768px){
+    body {
+        min-height: 100vh;
+        width: 100%;
+    }
+
+    .btns {
+        gap: 5px;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+        width: 180px;
+        padding: 0px;
+        height: 50px;
+    }
+
+    
+}

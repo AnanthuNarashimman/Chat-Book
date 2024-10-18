@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/827b3390e0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/cpwrd.css') }}">
+</head>
+<body>
+    <div class="formArea">
+        <h2>Change Password</h2>
+        <form  method="post" action="{{ url_for('changepassword') }}"> 
+            <div class="oldpwordArea inputArea">
+                <i class="fa-solid fa-key"></i>
+                <input type="password" id="oldpwordBox"  placeholder="Old Password" name="oldpassword" required>
+            </div>
+            
+            <button class="checkpword">Check</button>
+            
+            
+            <div class="newpwordArea inputArea">
+                <i class="fa-solid fa-key"></i>
+                <input type="password" id="newpwordBox" placeholder="New Password" name="newpassword" required disabled>
+            </div>
+            <div class="renewpwordArea inputArea">
+                <i class="fa-solid fa-key"></i>
+                <input type="password" id="renewpwordBox" placeholder="Re-enter New Password" name="renewpassword" required disabled>
+            </div>
+            <input type="submit" id="changepword"   value="Change Password" disabled>
+        </form>
+    </div>
+
+    
+    
+    <script src="{{ url_for('static', filename='js/cpword.js') }}"></script>
+</body>
+</html>
+

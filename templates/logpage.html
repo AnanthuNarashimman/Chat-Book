@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://kit.fontawesome.com/827b3390e0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+     
+    <div class="formArea">
+        <h2>Sign Up</h2>
+        <form id="authform" action="{{ url_for('add_user') }}" method="post">
+            <div class="nameArea inputArea">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" id="nameBox" placeholder="Name" name="username" required>
+            </div>
+            
+            <div class="mailArea inputArea">
+                <i class="fa-solid fa-envelope"></i>
+                <input type="email" id="mailBox" placeholder="Mail" name="mail" required>
+            </div>
+
+            <div class="pwordArea inputArea">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" id="pwordBox" placeholder="Password" name="password" required>
+            </div>
+
+            <input type="submit" id="register" value="Register">
+            {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                    {% for category, msg in messages %}
+                        <p class="flash {{ category }}">{{msg}}</p>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+        
+        </form>
+
+        
+
+        
+        <div class="buttonarea">
+            <button class="signIn default">SignIn</button>
+            <button class="signUp active default">SignUp</button>
+        </div>
+    </div>
+    
+
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
+
+
