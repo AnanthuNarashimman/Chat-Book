@@ -46,7 +46,6 @@ body {
 .navlinks li:hover{
     transform: translateY(-4px);
     text-decoration: underline;
-    color: white;
 }
 
 .logo {
@@ -206,6 +205,10 @@ body {
 
     .navlinks li{
         padding: 20px;
+    }
+
+    .navlinks li:hover{
+        color: white;
     }
 
     .navlinks a{
